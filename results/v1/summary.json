@@ -1,0 +1,69 @@
+{
+ "meta": {
+  "llm": "Qwen/Qwen2.5-1.5B-Instruct (int8 gate/up)",
+  "embeddings": "intfloat/multilingual-e5-small",
+  "top_k": 4,
+  "seuils": [
+   0.82,
+   0.88
+  ],
+  "max_reecritures": 2,
+  "chargement_et_prechauffage_s": 35.7,
+  "threads": 2,
+  "date": "2026-10-24 21:47",
+  "duree_totale_s": 1331.4
+ },
+ "synthese": {
+  "simple": {
+   "n": 10,
+   "latence_moy_s": 34.5,
+   "latence_med_s": 33.4,
+   "latence_max_s": 69.0,
+   "erreurs": 0,
+   "reecritures": 0,
+   "appels_llm_moy": 4.2,
+   "hit_at_k": 1,
+   "rappel_at_k": 0.95,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "couverture_faits": 0.925,
+   "citation_correcte": 1,
+   "citation_native": 1,
+   "score_qualite": 0.948
+  },
+  "complexe": {
+   "n": 10,
+   "latence_moy_s": 87.1,
+   "latence_med_s": 90.8,
+   "latence_max_s": 118.0,
+   "erreurs": 0,
+   "reecritures": 4,
+   "appels_llm_moy": 7.3,
+   "hit_at_k": 1,
+   "rappel_at_k": 0.917,
+   "mrr": 1.0,
+   "precision_pertinents": 0.817,
+   "couverture_faits": 0.608,
+   "citation_correcte": 1,
+   "citation_native": 0.9,
+   "score_qualite": 0.726
+  },
+  "global": {
+   "n": 20,
+   "latence_moy_s": 60.8,
+   "latence_med_s": 59.9,
+   "latence_max_s": 118.0,
+   "erreurs": 0,
+   "reecritures": 4,
+   "appels_llm_moy": 5.8,
+   "hit_at_k": 1,
+   "rappel_at_k": 0.933,
+   "mrr": 1.0,
+   "precision_pertinents": 0.904,
+   "couverture_faits": 0.767,
+   "citation_correcte": 1,
+   "citation_native": 0.95,
+   "score_qualite": 0.837
+  }
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "tours": [
+  {
+   "question": "Quel est le délai de notification d'une violation de données selon le RGPD ?",
+   "question_autonome": "Quel est le délai de notification d'une violation de données selon le RGPD ?",
+   "reponse": "Selon l'article 33 du RGPD, le responsable de traitement doit notifier la violation à l'autorité de contrôle compétente dans les meilleurs délais et, si possible, au plus tard 72 heures après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes. Cette notification doit être justifiée.\n\nSources : [D06]",
+   "sources": [
+    "D06"
+   ],
+   "latence_s": 38.83,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.63,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "4/4 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 34.78,
+     "info": "4 fragment(s) en contexte, 367 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.36,
+     "info": "ok; sources ajoutées automatiquement; citations invalides retirées=[]; ancrage=0.918"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  },
+  {
+   "question": "Et quelle amende maximale risque-t-on pour un manquement grave ?",
+   "question_autonome": "Quelle est l'amende maximale encourue pour un manquement grave à la notification d'une violation de données selon le RGPD ?",
+   "reponse": "Pour un manquement grave à la notification d'une violation de données selon le RGPD, l'amende peut atteindre 20 millions d'euros ou 4 % du chiffre d'affaires annuel mondial [D06].",
+   "sources": [
+    "D06"
+   ],
+   "latence_s": 40.18,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 10.4,
+     "info": "LLM -> Quelle est l'amende maximale encourue pour un manquement grave à la notification d'une violation de données selon le RGPD ?"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.13,
+     "info": "LLM='DIRECT' -> recherche (garde-fou : score 0.902); complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 5.41,
+     "info": "2/4 pertinents (2 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 20.98,
+     "info": "2 fragment(s) en contexte, 179 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.2,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.915"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  }
+ ],
+ "historique_thread": [
+  {
+   "role": "human",
+   "contenu": "Quel est le délai de notification d'une violation de données selon le RGPD ?"
+  },
+  {
+   "role": "ai",
+   "contenu": "Selon l'article 33 du RGPD, le responsable de traitement doit notifier la violation à l'autorité de contrôle compétente dans les meilleurs délais et, si possible, au plus tard 72 heures après en avoir"
+  },
+  {
+   "role": "human",
+   "contenu": "Et quelle amende maximale risque-t-on pour un manquement grave ?"
+  },
+  {
+   "role": "ai",
+   "contenu": "Pour un manquement grave à la notification d'une violation de données selon le RGPD, l'amende peut atteindre 20 millions d'euros ou 4 % du chiffre d'affaires annuel mondial [D06]."
+  }
+ ]
+}

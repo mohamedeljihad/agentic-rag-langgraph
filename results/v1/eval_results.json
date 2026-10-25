@@ -1,0 +1,1826 @@
+{
+ "meta": {
+  "llm": "Qwen/Qwen2.5-1.5B-Instruct (int8 gate/up)",
+  "embeddings": "intfloat/multilingual-e5-small",
+  "top_k": 4,
+  "seuils": [
+   0.82,
+   0.88
+  ],
+  "max_reecritures": 2,
+  "chargement_et_prechauffage_s": 35.7,
+  "threads": 2,
+  "date": "2026-10-24 21:47",
+  "duree_totale_s": 1331.4
+ },
+ "resultats": [
+  {
+   "id": "S01",
+   "type": "simple",
+   "question": "Quel est le délai de notification d'une violation de données à l'autorité de contrôle selon le RGPD ?",
+   "reponse": "Selon l'article 33 du RGPD, le responsable de traitement doit notifier la violation à l'autorité de contrôle compétente (par exemple la CNIL en France) dans les meilleurs délais, et, si possible, au plus tard 72 heures après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes. Toutes les violations, même non notifiées, doivent être consignées dans un registre interne [D06].",
+   "erreur": "",
+   "latence_s": 56.53,
+   "route": "recherche",
+   "question_autonome": "Quel est le délai de notification d'une violation de données à l'autorité de contrôle selon le RGPD ?",
+   "sous_questions": [
+    "Quel est le délai de notification d'une violation de données à l'autorité de contrôle selon le RGPD ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D06"
+   ],
+   "docs_recuperes": [
+    "D06"
+   ],
+   "docs_pertinents": [
+    "D06"
+   ],
+   "sources_citees": [
+    "D06"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.963,
+   "appels_llm": 5,
+   "tokens_generes": 126,
+   "temps_llm_s": 51.56,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.93,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 4.57,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 7.87,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 39.76,
+     "info": "1 fragment(s) en contexte, 459 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.36,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.963"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "type": "simple",
+   "question": "En quoi consiste la règle de sauvegarde 3-2-1 ?",
+   "reponse": "La règle de sauvegarde 3-2-1 recommande de conserver au moins trois copies des données (l'original et deux sauvegardes) sur deux supports de stockage différents, dont une copie hors site [D04]. La variante 3-2-1-1-0 ajoute une copie hors ligne ou immuable, protégée contre les rançongiciels, et zéro erreur constatée lors des tests de restauration [D04].",
+   "erreur": "",
+   "latence_s": 49.57,
+   "route": "recherche",
+   "question_autonome": "En quoi consiste la règle de sauvegarde 3-2-1 ?",
+   "sous_questions": [
+    "En quoi consiste la règle de sauvegarde 3-2-1 ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D04"
+   ],
+   "docs_recuperes": [
+    "D04"
+   ],
+   "docs_pertinents": [
+    "D04"
+   ],
+   "sources_citees": [
+    "D04"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    true,
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.993,
+   "appels_llm": 5,
+   "tokens_generes": 118,
+   "temps_llm_s": 49.42,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 4.07,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.19,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 37.16,
+     "info": "1 fragment(s) en contexte, 354 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.1,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.993"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D04']"
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "type": "simple",
+   "question": "Quelle autorité marocaine contrôle la protection des données à caractère personnel ?",
+   "reponse": "La Commission nationale de contrôle de la protection des données à caractère personnel (CNDP) est l'autorité marocaine qui contrôle la protection des données à caractère personnel [D07].",
+   "erreur": "",
+   "latence_s": 29.99,
+   "route": "recherche",
+   "question_autonome": "Quelle autorité marocaine contrôle la protection des données à caractère personnel ?",
+   "sous_questions": [
+    "Quelle autorité marocaine contrôle la protection des données à caractère personnel ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D07"
+   ],
+   "docs_recuperes": [
+    "D07",
+    "D08"
+   ],
+   "docs_pertinents": [
+    "D07"
+   ],
+   "sources_citees": [
+    "D07"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.951,
+   "appels_llm": 5,
+   "tokens_generes": 52,
+   "temps_llm_s": 29.77,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 4.36,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.04,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 17.36,
+     "info": "1 fragment(s) en contexte, 186 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.16,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.951"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D07']"
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "type": "simple",
+   "question": "Quelles sont les quatre phases de la gestion des incidents selon le NIST ?",
+   "reponse": "Les quatre phases de la gestion des incidents selon le NIST sont : 1. Préparation : constituer l'équipe de réponse (CSIRT), rédiger les procédures, disposer des outils et des contacts nécessaires, et réaliser des exercices [D11].",
+   "erreur": "",
+   "latence_s": 36.56,
+   "route": "recherche",
+   "question_autonome": "Quelles sont les quatre phases de la gestion des incidents selon le NIST ?",
+   "sous_questions": [
+    "Quelles sont les quatre phases de la gestion des incidents selon le NIST ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D11"
+   ],
+   "docs_recuperes": [
+    "D11",
+    "D09"
+   ],
+   "docs_pertinents": [
+    "D11"
+   ],
+   "sources_citees": [
+    "D11"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "couverture_faits": 0.25,
+   "citation_correcte": 1,
+   "score_qualite": 0.475,
+   "ancrage": 0.944,
+   "appels_llm": 5,
+   "tokens_generes": 71,
+   "temps_llm_s": 36.31,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.62,
+     "info": "LLM='DIRECT' -> recherche (garde-fou : score 0.925); complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.24,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 24.5,
+     "info": "1 fragment(s) en contexte, 229 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.15,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.944"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D11']"
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "type": "simple",
+   "question": "Combien de mesures de sécurité contient l'annexe A de la norme ISO 27001 version 2022 ?",
+   "reponse": "L'annexe A de la norme ISO/IEC 27001 version 2022 contient 93 mesures de sécurité regroupées en quatre thèmes : 37 mesures organisationnelles, 8 mesures liées aux personnes, 14 mesures physiques et 34 mesures technologiques [D10].",
+   "erreur": "",
+   "latence_s": 69.02,
+   "route": "recherche",
+   "question_autonome": "Combien de mesures de sécurité contient l'annexe A de la norme ISO 27001 version 2022 ?",
+   "sous_questions": [
+    "Combien de mesures de sécurité contient l'annexe A de la norme ISO 27001 version 2022 ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D10"
+   ],
+   "docs_recuperes": [
+    "D10",
+    "D09"
+   ],
+   "docs_pertinents": [
+    "D10"
+   ],
+   "sources_citees": [
+    "D10"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.953,
+   "appels_llm": 8,
+   "tokens_generes": 133,
+   "temps_llm_s": 68.79,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 4.07,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=True"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 11.92,
+     "info": "repli : [\"Combien de mesures de sécurité contient l'annexe A de la norme ISO 27001 version 2022 ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.09,
+     "info": "2 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.73,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "calculer",
+     "duree_s": 14.35,
+     "info": "calcul abandonné après 2 tentatives : [\"93 (rejetée : n'utilise pas les données de la question)\", \"93 (rejetée : n'utilise pas les données de la question)\"]"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 29.72,
+     "info": "1 fragment(s) en contexte, 230 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.13,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.953"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D10']"
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "type": "simple",
+   "question": "Qu'est-ce que le smishing ?",
+   "reponse": "Le smishing est un hameçonnage par SMS [D01].",
+   "erreur": "",
+   "latence_s": 16.62,
+   "route": "recherche",
+   "question_autonome": "Qu'est-ce que le smishing ?",
+   "sous_questions": [
+    "Qu'est-ce que le smishing ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D01"
+   ],
+   "docs_recuperes": [
+    "D01",
+    "D10"
+   ],
+   "docs_pertinents": [
+    "D01"
+   ],
+   "sources_citees": [
+    "D01"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.86,
+   "appels_llm": 3,
+   "tokens_generes": 24,
+   "temps_llm_s": 16.43,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.61,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 2.19,
+     "info": "1/4 pertinents (1 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 10.63,
+     "info": "1 fragment(s) en contexte, 45 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.13,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.860"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D01']"
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "type": "simple",
+   "question": "À partir de quel score CVSS une vulnérabilité est-elle considérée comme critique ?",
+   "reponse": "Selon la version 4.0 du Common Vulnerability Scoring System (CVSS), une vulnérabilité est considérée critique si son score est de 9,0 à 10,0 [D15].",
+   "erreur": "",
+   "latence_s": 31.69,
+   "route": "recherche",
+   "question_autonome": "À partir de quel score CVSS une vulnérabilité est-elle considérée comme critique ?",
+   "sous_questions": [
+    "À partir de quel score CVSS une vulnérabilité est-elle considérée comme critique ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D15"
+   ],
+   "docs_recuperes": [
+    "D15"
+   ],
+   "docs_pertinents": [
+    "D15"
+   ],
+   "sources_citees": [
+    "D15"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.932,
+   "appels_llm": 4,
+   "tokens_generes": 58,
+   "temps_llm_s": 31.38,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.85,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.06,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 5.67,
+     "info": "2/4 pertinents (2 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 21.87,
+     "info": "2 fragment(s) en contexte, 147 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.22,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.932"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D15']"
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "type": "simple",
+   "question": "Quel est le principe fondamental du modèle Zero Trust ?",
+   "reponse": "Le principe fondamental du modèle Zero Trust est « ne jamais faire confiance, toujours vérifier ». [D13]",
+   "erreur": "",
+   "latence_s": 20.26,
+   "route": "recherche",
+   "question_autonome": "Quel est le principe fondamental du modèle Zero Trust ?",
+   "sous_questions": [
+    "Quel est le principe fondamental du modèle Zero Trust ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D13"
+   ],
+   "docs_recuperes": [
+    "D13",
+    "D04"
+   ],
+   "docs_pertinents": [
+    "D13"
+   ],
+   "sources_citees": [
+    "D13"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.905,
+   "appels_llm": 2,
+   "tokens_generes": 31,
+   "temps_llm_s": 19.85,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.36,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "3/4 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 16.49,
+     "info": "3 fragment(s) en contexte, 104 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.36,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.905"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D13']"
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "type": "simple",
+   "question": "Quelle est la meilleure protection contre les injections SQL ?",
+   "reponse": "La meilleure protection contre les injections SQL est l'utilisation de requêtes préparées (requêtes paramétrées) complétées par la validation des entrées et le principe du moindre privilège pour le compte d'accès à la base [D14].",
+   "erreur": "",
+   "latence_s": 35.01,
+   "route": "recherche",
+   "question_autonome": "Quelle est la meilleure protection contre les injections SQL ?",
+   "sous_questions": [
+    "Quelle est la meilleure protection contre les injections SQL ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D14"
+   ],
+   "docs_recuperes": [
+    "D14",
+    "D01",
+    "D02"
+   ],
+   "docs_pertinents": [
+    "D14"
+   ],
+   "sources_citees": [
+    "D14"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.91,
+   "appels_llm": 5,
+   "tokens_generes": 67,
+   "temps_llm_s": 34.78,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.82,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.05,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.84,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 22.12,
+     "info": "1 fragment(s) en contexte, 229 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.17,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.910"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D14']"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "type": "simple",
+   "question": "Que signifie l'acronyme MFA ?",
+   "reponse": "D'après le glossaire de la base : MFA : Multi-Factor Authentication — authentification multifacteur : vérification de l'identité par au moins deux facteurs de nature différente (connaissance, possession, inhérence). [GLOSSAIRE]",
+   "erreur": "",
+   "latence_s": 0.01,
+   "route": "glossaire",
+   "question_autonome": "Que signifie l'acronyme MFA ?",
+   "sous_questions": [],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D03",
+    "GLOSSAIRE"
+   ],
+   "docs_recuperes": [
+    "GLOSSAIRE"
+   ],
+   "docs_pertinents": [],
+   "sources_citees": [
+    "GLOSSAIRE"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 0.5,
+   "mrr": 1.0,
+   "precision_pertinents": null,
+   "faits_trouves": [
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.0,
+   "appels_llm": 0,
+   "tokens_generes": 0,
+   "temps_llm_s": 0.0,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 0.0,
+     "info": "règle glossaire (MFA)"
+    },
+    {
+     "noeud": "glossaire",
+     "duree_s": 0.0,
+     "info": "1 définition(s)"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['GLOSSAIRE']"
+    }
+   ]
+  },
+  {
+   "id": "C01",
+   "type": "complexe",
+   "question": "Comparez les délais de notification d'incident imposés par le RGPD et par la directive NIS2.",
+   "reponse": "Selon l'article 33 du RGPD, le responsable de traitement doit notifier la violation à l'autorité de contrôle compétente dans les meilleurs délais et, si possible, au plus tard 72 heures après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes. Toute notification tardive doit être justifiée. Toutes les violations, même non notifiées, doivent être consignées dans un registre interne. La directive européenne NIS2, dite NIS2, vise à assurer un niveau élevé commun de cybersécurité dans l'Union européenne. Elle remplace la directive NIS de 2016 et devrait être transposée par les États membres au plus tard le 17 octobre 2024. Elle élargit fortement le champ des organisations concernées à 18 secteurs, dont l'énergie, les transports, la santé, les infrastructures\n\nSources : [D09], [D06], [D05]",
+   "erreur": "",
+   "latence_s": 102.89,
+   "route": "recherche",
+   "question_autonome": "Comparez les délais de notification d'incident imposés par le RGPD et par la directive NIS2.",
+   "sous_questions": [
+    "Quels sont les délais de notification au RGPD ?",
+    "Quels sont les délais de notification à la directive NIS2 ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D06",
+    "D09"
+   ],
+   "docs_recuperes": [
+    "D09",
+    "D06",
+    "D05"
+   ],
+   "docs_pertinents": [
+    "D09",
+    "D06",
+    "D05"
+   ],
+   "sources_citees": [
+    "D09",
+    "D06",
+    "D05"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 0.667,
+   "faits_trouves": [
+    true,
+    false,
+    false
+   ],
+   "couverture_faits": 0.333,
+   "citation_correcte": 1,
+   "score_qualite": 0.533,
+   "ancrage": 0.952,
+   "appels_llm": 7,
+   "tokens_generes": 260,
+   "temps_llm_s": 102.32,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.95,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 9.68,
+     "info": "LLM : ['Quels sont les délais de notification au RGPD ?', 'Quels sont les délais de notification à la directive NIS2 ?']"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.12,
+     "info": "3 requête(s), 9 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 10.32,
+     "info": "5/9 pertinents (4 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 78.38,
+     "info": "5 fragment(s) en contexte, 849 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.43,
+     "info": "ok; sources ajoutées automatiquement; citations invalides retirées=[]; ancrage=0.952"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D09', 'D06', 'D05']"
+    }
+   ]
+  },
+  {
+   "id": "C02",
+   "type": "complexe",
+   "question": "Une entreprise réalisant un chiffre d'affaires mondial annuel de 1 milliard d'euros commet une infraction grave au RGPD : quelle amende maximale encourt-elle ?",
+   "reponse": "L'entreprise commet une infraction grave au RGPD et encourt une amende maximale de 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial, soit 40 millions d'euros [D06].\n\nRésultat de l'outil calculatrice : max(20000000,  0.04*1000000000) = 40 000 000.",
+   "erreur": "",
+   "latence_s": 71.59,
+   "route": "recherche",
+   "question_autonome": "Une entreprise réalisant un chiffre d'affaires mondial annuel de 1 milliard d'euros commet une infraction grave au RGPD : quelle amende maximale encourt-elle ?",
+   "sous_questions": [
+    "Une entreprise réalisant un chiffre d'affaires mondial annuel de 1 milliard d'euros commet une infraction grave au RGPD : quelle amende maximale encourt-elle ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": {
+    "expression": "max(20000000,  0.04*1000000000)",
+    "resultat": "40 000 000"
+   },
+   "sources_attendues": [
+    "D06"
+   ],
+   "docs_recuperes": [
+    "D06",
+    "D09",
+    "D05"
+   ],
+   "docs_pertinents": [
+    "D06",
+    "D09"
+   ],
+   "sources_citees": [
+    "D06"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 0.5,
+   "faits_trouves": [
+    true,
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.921,
+   "appels_llm": 7,
+   "tokens_generes": 139,
+   "temps_llm_s": 71.23,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.21,
+     "info": "LLM='DIRECT' -> recherche (garde-fou : score 0.905); complexe=True; calcul=True"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 7.02,
+     "info": "repli : [\"Une entreprise réalisant un chiffre d'affaires mondial annuel de 1 milliard d'euros commet une infraction grave au RGPD : quelle amende maximale encourt-elle ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.09,
+     "info": "2 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 5.66,
+     "info": "2/4 pertinents (2 jugement(s) LLM)"
+    },
+    {
+     "noeud": "calculer",
+     "duree_s": 31.37,
+     "info": "tentative 2 : max(20000000,  0.04*1000000000) = 40 000 000 ; échecs : [\"max(10000000,  0.02*100000000) (rejetée : n'utilise pas les données de la question)\"]"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 24.05,
+     "info": "2 fragment(s) en contexte, 178 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.17,
+     "info": "ok; résultat du calcul ajouté; citations invalides retirées=[]; ancrage=0.921"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  },
+  {
+   "id": "C03",
+   "type": "complexe",
+   "question": "Une entité importante au sens de NIS2 réalise un chiffre d'affaires mondial de 2 milliards d'euros : calculez le plafond d'amende applicable.",
+   "reponse": "Le plafond d'amende applicable pour une entité importante selon la directive européenne NIS2 est de 28 millions d'euros [D09].\n\nRésultat de l'outil calculatrice : max(7000000,  0.014*2000000000) = 28 000 000.",
+   "erreur": "",
+   "latence_s": 55.78,
+   "route": "recherche",
+   "question_autonome": "Une entité importante au sens de NIS2 réalise un chiffre d'affaires mondial de 2 milliards d'euros : calculez le plafond d'amende applicable.",
+   "sous_questions": [
+    "Une entité importante au sens de NIS2 réalise un chiffre d'affaires mondial de 2 milliards d'euros : calculez le plafond d'amende applicable. ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": {
+    "expression": "max(7000000,  0.014*2000000000)",
+    "resultat": "28 000 000"
+   },
+   "sources_attendues": [
+    "D09"
+   ],
+   "docs_recuperes": [
+    "D09",
+    "D06"
+   ],
+   "docs_pertinents": [
+    "D09"
+   ],
+   "sources_citees": [
+    "D09"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    false
+   ],
+   "couverture_faits": 0.5,
+   "citation_correcte": 1,
+   "score_qualite": 0.65,
+   "ancrage": 0.896,
+   "appels_llm": 7,
+   "tokens_generes": 109,
+   "temps_llm_s": 55.53,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.9,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=True"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 12.36,
+     "info": "repli : [\"Une entité importante au sens de NIS2 réalise un chiffre d'affaires mondial de 2 milliards d'euros : calculez le plafond d'amende applicable. ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.1,
+     "info": "2 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.54,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "calculer",
+     "duree_s": 14.24,
+     "info": "tentative 1 : max(7000000,  0.014*2000000000) = 28 000 000"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 16.5,
+     "info": "1 fragment(s) en contexte, 126 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.13,
+     "info": "ok; résultat du calcul ajouté; citations invalides retirées=[]; ancrage=0.896"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D09']"
+    }
+   ]
+  },
+  {
+   "id": "C04",
+   "type": "complexe",
+   "question": "Quelles mesures combiner pour prévenir un rançongiciel et pouvoir restaurer l'activité après une attaque ?",
+   "reponse": "Pour prévenir un rançongiciel et pouvoir restaurer l'activité après une attaque, il est recommandé de :\n\n1. Disposer de sauvegardes régulières dont au moins une copie est hors ligne ou immuable, donc inaccessible à l'attaquant [D02]. 2. Activer l'authentification multifacteur sur les accès distants et les comptes à privilèges [D02]. 3. Segmenter le réseau [D02]. 4. Déployer une solution de détection sur les postes (EDR) [D02]. En cas d'attaque, isoler immédiatement les machines touchées du réseau sans les éteindre, alerter l'équipe de réponse à incident, préserver les preuves, puis restaurer à partir de sauvegardes saines sont également recommandés [D02]. Il est conseillé de ne pas payer la rançon, car cela finance les attaquants et ne garantit pas la récupération",
+   "erreur": "",
+   "latence_s": 100.5,
+   "route": "recherche",
+   "question_autonome": "Quelles mesures combiner pour prévenir un rançongiciel et pouvoir restaurer l'activité après une attaque ?",
+   "sous_questions": [
+    "Comment prévenir un rançongiciel ?",
+    "Quelles mesures prendre pour restaurer l'activité après une attaque ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D02",
+    "D04"
+   ],
+   "docs_recuperes": [
+    "D02",
+    "D11",
+    "D04"
+   ],
+   "docs_pertinents": [
+    "D02",
+    "D11"
+   ],
+   "sources_citees": [
+    "D02"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 0.5,
+   "faits_trouves": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "couverture_faits": 0.75,
+   "citation_correcte": 1,
+   "score_qualite": 0.825,
+   "ancrage": 0.922,
+   "appels_llm": 5,
+   "tokens_generes": 254,
+   "temps_llm_s": 99.91,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 4.31,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 9.61,
+     "info": "LLM : ['Comment prévenir un rançongiciel ?', \"Quelles mesures prendre pour restaurer l'activité après une attaque ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.12,
+     "info": "3 requête(s), 6 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 5.26,
+     "info": "4/6 pertinents (2 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 80.73,
+     "info": "4 fragment(s) en contexte, 775 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.47,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.922"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D02']"
+    }
+   ]
+  },
+  {
+   "id": "C05",
+   "type": "complexe",
+   "question": "Quelles sont les différences entre la loi marocaine 09-08 et la loi 05-20 en termes d'objet et d'autorité compétente ?",
+   "reponse": "La loi marocaine n°09-08 est relative à la protection des données à caractère personnel, tandis que la loi 05-20 relative à la cybersécurité fixe un cadre juridique pour la sécurité des systèmes d'information des différents acteurs mentionnés [D07][D08]. Concernant l'autorité compétente, la loi 09-08 instaure la Commission nationale de contrôle de la protection des données à caractère personnel (CNDP), tandis que la loi 05-20 crée l'autorité nationale de la cybersécurité, qui est la Direction générale de la sécurité des systèmes d'information (DGSSI) rattachée à l'Administration de la défense nationale [D07][D08].",
+   "erreur": "",
+   "latence_s": 92.09,
+   "route": "recherche",
+   "question_autonome": "Quelles sont les différences entre la loi marocaine 09-08 et la loi 05-20 en termes d'objet et d'autorité compétente ?",
+   "sous_questions": [
+    "Quel est l'objet de la Loi Marocaine n°09-08 ?",
+    "Qui a l'autorité compétente pour appliquer la Loi Marocaine n°09-08 ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D07",
+    "D08"
+   ],
+   "docs_recuperes": [
+    "D07",
+    "D08"
+   ],
+   "docs_pertinents": [
+    "D07",
+    "D08"
+   ],
+   "sources_citees": [
+    "D07",
+    "D08"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "couverture_faits": 1.0,
+   "citation_correcte": 1,
+   "score_qualite": 1.0,
+   "ancrage": 0.965,
+   "appels_llm": 6,
+   "tokens_generes": 239,
+   "temps_llm_s": 91.67,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 4.06,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 15.41,
+     "info": "LLM : [\"Quel est l'objet de la Loi Marocaine n°09-08 ?\", \"Qui a l'autorité compétente pour appliquer la Loi Marocaine n°09-08 ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.12,
+     "info": "3 requête(s), 6 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 7.91,
+     "info": "3/6 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 64.29,
+     "info": "3 fragment(s) en contexte, 621 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.27,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.965"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D07', 'D08']"
+    }
+   ]
+  },
+  {
+   "id": "C06",
+   "type": "complexe",
+   "question": "Comment l'authentification multifacteur et le modèle Zero Trust se complètent-ils pour limiter l'impact d'un vol d'identifiants par hameçonnage ?",
+   "reponse": "L'authentification multifacteur (MFA) réduit fortement le risque de compromission de compte, même lorsqu'un mot de passe a été volé par hameçonnage [D03]. Le modèle Zero Trust considère qu'aucun utilisateur, appareil ou flux n'est digne de confiance par défaut, qu'il soit interne ou externe [D13]. L'authentification multifacteur et le modèle Zero Trust peuvent se compléter pour limiter l'impact d'un vol d'identifiants par hameçonnage en utilisant des facteurs d'authentification supplémentaires pour vérifier l'identité de l'utilisateur [D13].",
+   "erreur": "",
+   "latence_s": 117.97,
+   "route": "recherche",
+   "question_autonome": "Comment l'authentification multifacteur et le modèle Zero Trust se complètent-ils pour limiter l'impact d'un vol d'identifiants par hameçonnage ?",
+   "sous_questions": [
+    "Quels sont les avantages de l'authentification multifacteur ?",
+    "Quels sont les principes du modèle Zero Trust ?",
+    "Comment l'authentification multifacteur et le modèle Zero Trust peuvent-ils combiner pour protéger contre un vol d'identifiants par hameçonnage ?"
+   ],
+   "nb_reecritures": 2,
+   "calcul": null,
+   "sources_attendues": [
+    "D03",
+    "D13",
+    "D01"
+   ],
+   "docs_recuperes": [
+    "D13",
+    "D03",
+    "D04"
+   ],
+   "docs_pertinents": [
+    "D13",
+    "D03"
+   ],
+   "sources_citees": [
+    "D03",
+    "D13"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 0.667,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    false,
+    true
+   ],
+   "couverture_faits": 0.667,
+   "citation_correcte": 1,
+   "score_qualite": 0.767,
+   "ancrage": 0.92,
+   "appels_llm": 8,
+   "tokens_generes": 312,
+   "temps_llm_s": 117.27,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.97,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 19.84,
+     "info": "LLM : [\"Quels sont les avantages de l'authentification multifacteur ?\", 'Quels sont les principes du modèle Zero Trust ?', \"Comment l'authentification multifacteur et le modèle Zero Trust peuvent-ils combiner pour protéger contre un vol d'identifiants par hameçonnage ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.17,
+     "info": "4 requête(s), 7 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 8.61,
+     "info": "4/7 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "reecrire",
+     "duree_s": 13.0,
+     "info": "tentative 1 : [\"Comment l'authentification multifacteur et le modèle Zero Trust peuvent-ils être combinés pour garantir la sécurité contre les attaques par vol d'identifiants et les men\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.05,
+     "info": "1 requête(s), 0 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "4/7 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "reecrire",
+     "duree_s": 12.58,
+     "info": "tentative 2 : [\"Comment l'authentification multifacteur et le modèle Zero Trust peuvent-ils être combinés pour garantir la sécurité contre les attaques par vol d'identifiants et les men\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 0 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "4/7 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 59.28,
+     "info": "4 fragment(s) en contexte, 547 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.4,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.920"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D03', 'D13']"
+    }
+   ]
+  },
+  {
+   "id": "C07",
+   "type": "complexe",
+   "question": "Une vulnérabilité de score CVSS 7,5 touche une application web exposée sur Internet : quel est son niveau de sévérité et quelles actions faut-il prioriser ?",
+   "reponse": "La vulnérabilité de score CVSS 7,5 touche une application web exposée sur Internet. Son niveau de sévérité est critique (9,0 à 10,0). Pour prioriser les actions, il faut corriger cette vulnérabilité en priorité, dans des délais courts fixés par la politique de sécurité. Si le correctif n'est pas disponible, des mesures compensatoires comme le filtrage, la désactivation du service ou le WAF peuvent réduire le risque en attendant la mise à jour. [D15] [D15]",
+   "erreur": "",
+   "latence_s": 91.13,
+   "route": "recherche",
+   "question_autonome": "Une vulnérabilité de score CVSS 7,5 touche une application web exposée sur Internet : quel est son niveau de sévérité et quelles actions faut-il prioriser ?",
+   "sous_questions": [
+    "Comment évaluer la sévérité d'une vulnérabilité CVSS 7,5 ?",
+    "Quels sont les premiers pas à prendre suite à une vulnérabilité CVSS 7,5 ?"
+   ],
+   "nb_reecritures": 2,
+   "calcul": null,
+   "sources_attendues": [
+    "D15",
+    "D14"
+   ],
+   "docs_recuperes": [
+    "D15"
+   ],
+   "docs_pertinents": [
+    "D15"
+   ],
+   "sources_citees": [
+    "D15"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 0.5,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    false,
+    true,
+    true
+   ],
+   "couverture_faits": 0.667,
+   "citation_correcte": 1,
+   "score_qualite": 0.767,
+   "ancrage": 0.955,
+   "appels_llm": 7,
+   "tokens_generes": 243,
+   "temps_llm_s": 90.62,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.6,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 15.59,
+     "info": "LLM : [\"Comment évaluer la sévérité d'une vulnérabilité CVSS 7,5 ?\", 'Quels sont les premiers pas à prendre suite à une vulnérabilité CVSS 7,5 ?']"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.13,
+     "info": "3 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 5.32,
+     "info": "2/4 pertinents (2 jugement(s) LLM)"
+    },
+    {
+     "noeud": "reecrire",
+     "duree_s": 9.73,
+     "info": "tentative 1 : ['Quelles sont les mesures initiales à mettre en œuvre après avoir identifié une vulnérabilité CVSS 7,5 ?']"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.05,
+     "info": "1 requête(s), 0 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "2/4 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "reecrire",
+     "duree_s": 9.77,
+     "info": "tentative 2 : ['Quelles sont les mesures initiales à mettre en œuvre après avoir identifié une vulnérabilité CVSS 7,5 ?']"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 0 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "2/4 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 46.61,
+     "info": "2 fragment(s) en contexte, 459 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.27,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.955"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D15']"
+    }
+   ]
+  },
+  {
+   "id": "C08",
+   "type": "complexe",
+   "question": "Comment le chiffrement aide-t-il à respecter l'obligation de sécurité du RGPD, et quel est son effet en cas de violation de données ?",
+   "reponse": "Le chiffrement contribue à la conformité RGPD en protégeant les données personnelles contre la destruction, la perte, l'altération, la divulgation non autorisée et l'accès non autorisé [D06]. En cas de violation de données, le chiffrement réduit le risque de dégradation de l'intégrité, de la confidentialité et de la disponibilité des données [D06].",
+   "erreur": "",
+   "latence_s": 63.22,
+   "route": "recherche",
+   "question_autonome": "Comment le chiffrement aide-t-il à respecter l'obligation de sécurité du RGPD, et quel est son effet en cas de violation de données ?",
+   "sous_questions": [
+    "Comment le chiffrement contribue à la conformité RGPD ?",
+    "Quel est l'impact d'une violation de données lorsqu'elle se produit ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D12",
+    "D05",
+    "D06"
+   ],
+   "docs_recuperes": [
+    "D12",
+    "D06",
+    "D05"
+   ],
+   "docs_pertinents": [
+    "D12",
+    "D06"
+   ],
+   "sources_citees": [
+    "D06"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    false,
+    true
+   ],
+   "couverture_faits": 0.667,
+   "citation_correcte": 1,
+   "score_qualite": 0.767,
+   "ancrage": 0.917,
+   "appels_llm": 8,
+   "tokens_generes": 140,
+   "temps_llm_s": 62.9,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.98,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 11.37,
+     "info": "LLM : ['Comment le chiffrement contribue à la conformité RGPD ?', \"Quel est l'impact d'une violation de données lorsqu'elle se produit ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.13,
+     "info": "3 requête(s), 7 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 13.42,
+     "info": "2/7 pertinents (5 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 34.13,
+     "info": "2 fragment(s) en contexte, 350 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.18,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.917"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  },
+  {
+   "id": "C09",
+   "type": "complexe",
+   "question": "Après la détection d'un rançongiciel dans une entité essentielle de l'UE, quelles étapes de gestion d'incident faut-il suivre et quelles notifications NIS2 s'appliquent ?",
+   "reponse": "Après la détection d'un rançongiciel dans une entité essentielle de l'UE, il faut isoler immédiatement les machines touchées du réseau sans les éteindre, alerter l'équipe de réponse à incident, préserver les preuves, puis restaurer à partir de sauvegardes saines. Les autorités recommandent de ne pas payer la rançon : le paiement ne garantit pas la récupération des données et finance les attaquants. Il est conseillé de porter plainte et de notifier les autorités compétentes lorsque la réglementation l'exige [D02].",
+   "erreur": "",
+   "latence_s": 90.56,
+   "route": "recherche",
+   "question_autonome": "Après la détection d'un rançongiciel dans une entité essentielle de l'UE, quelles étapes de gestion d'incident faut-il suivre et quelles notifications NIS2 s'appliquent ?",
+   "sous_questions": [
+    "Quelles sont les étapes à suivre après la détection d'un ransomware dans une entité essentielle de l'UE ?",
+    "Quelles sont les notifications NIST spécifiques qui s'appliquent après une telle situation ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": null,
+   "sources_attendues": [
+    "D11",
+    "D02",
+    "D09"
+   ],
+   "docs_recuperes": [
+    "D09",
+    "D11",
+    "D02"
+   ],
+   "docs_pertinents": [
+    "D09",
+    "D02"
+   ],
+   "sources_citees": [
+    "D02"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 1.0,
+   "faits_trouves": [
+    true,
+    true,
+    false,
+    false
+   ],
+   "couverture_faits": 0.5,
+   "citation_correcte": 1,
+   "score_qualite": 0.65,
+   "ancrage": 0.872,
+   "appels_llm": 9,
+   "tokens_generes": 205,
+   "temps_llm_s": 89.94,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.84,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 15.24,
+     "info": "LLM : [\"Quelles sont les étapes à suivre après la détection d'un ransomware dans une entité essentielle de l'UE ?\", \"Quelles sont les notifications NIST spécifiques qui s'appliquent après une telle situation ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.15,
+     "info": "3 requête(s), 9 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 17.48,
+     "info": "4/9 pertinents (6 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 53.4,
+     "info": "4 fragment(s) en contexte, 518 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.44,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.872"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D02']"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "type": "complexe",
+   "question": "Avec un RPO de 24 heures et une sauvegarde complète qui dure 3 heures, combien de sauvegardes complètes faut-il au minimum par semaine et combien d'heures cela représente-t-il ?",
+   "reponse": "Selon ISO 27001, une sauvegarde complète doit être effectuée au moins tous les jours [D04]. Pour un RPO de 24 heures, une sauvegarde complète dure 3 heures, donc au moins une fois par semaine. Cela représente donc 72 heures par semaine.",
+   "erreur": "",
+   "latence_s": 85.74,
+   "route": "recherche",
+   "question_autonome": "Avec un RPO de 24 heures et une sauvegarde complète qui dure 3 heures, combien de sauvegardes complètes faut-il au minimum par semaine et combien d'heures cela représente-t-il ?",
+   "sous_questions": [
+    "Quelle est la fréquence minimale des sauvegardes complètes selon ISO 27001 ?",
+    "Combien d'heures consacrées à la sauvegarde complète dans un RPO de 3 heures ?"
+   ],
+   "nb_reecritures": 0,
+   "calcul": {
+    "expression": "24",
+    "resultat": "24"
+   },
+   "sources_attendues": [
+    "D04"
+   ],
+   "docs_recuperes": [
+    "D04",
+    "D10",
+    "D05",
+    "D11"
+   ],
+   "docs_pertinents": [
+    "D04",
+    "D05"
+   ],
+   "sources_citees": [
+    "D04"
+   ],
+   "hit_at_k": 1,
+   "rappel_at_k": 1.0,
+   "mrr": 1.0,
+   "precision_pertinents": 0.5,
+   "faits_trouves": [
+    false,
+    false
+   ],
+   "couverture_faits": 0.0,
+   "citation_correcte": 1,
+   "score_qualite": 0.3,
+   "ancrage": 0.901,
+   "appels_llm": 9,
+   "tokens_generes": 179,
+   "temps_llm_s": 85.33,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 4.26,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=True; calcul=True"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 17.48,
+     "info": "LLM : ['Quelle est la fréquence minimale des sauvegardes complètes selon ISO 27001 ?', \"Combien d'heures consacrées à la sauvegarde complète dans un RPO de 3 heures ?\"]"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.14,
+     "info": "3 requête(s), 8 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 14.22,
+     "info": "3/8 pertinents (5 jugement(s) LLM)"
+    },
+    {
+     "noeud": "calculer",
+     "duree_s": 17.08,
+     "info": "tentative 1 : 24 = 24"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 32.3,
+     "info": "3 fragment(s) en contexte, 236 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.26,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.901"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D04']"
+    }
+   ]
+  }
+ ]
+}
