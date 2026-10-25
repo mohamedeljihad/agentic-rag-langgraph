@@ -1,0 +1,23 @@
+{
+ "_methode": "Relecture humaine des 20 réponses finales (results/eval_results.json) : correct = répond à toutes les parties sans erreur factuelle ; partiel = juste mais incomplet ou attribution de source erronée ; incorrect = erreur factuelle ou raisonnement faux.",
+ "S01": ["correct", "72 heures, article 33 ; légère reformulation inexacte (« cette notification doit être justifiée »)."],
+ "S02": ["correct", "Trois copies, deux supports, une hors site."],
+ "S03": ["correct", "CNDP."],
+ "S04": ["correct", "Les quatre phases NIST sont citées."],
+ "S05": ["correct", "93 mesures et répartition par thème."],
+ "S06": ["correct", "Hameçonnage par SMS."],
+ "S07": ["correct", "Score ≥ 9,0."],
+ "S08": ["correct", "« Ne jamais faire confiance, toujours vérifier »."],
+ "S09": ["correct", "Requêtes préparées/paramétrées."],
+ "S10": ["correct", "Définition issue de l'outil glossaire."],
+ "C01": ["partiel", "Délai RGPD (72 h) correct ; délais NIS2 (24 h / 72 h / 1 mois) absents malgré le document D09 retrouvé."],
+ "C02": ["correct", "40 millions d'euros grâce à l'outil calculatrice (max(20 M€ ; 4 % × 1 Md€))."],
+ "C03": ["correct", "28 millions d'euros (max(7 M€ ; 1,4 % × 2 Md€))."],
+ "C04": ["correct", "Prévention (correctifs, MFA, segmentation, EDR, sauvegarde hors ligne) et restauration."],
+ "C05": ["partiel", "Loi 09-08 et CNDP corrects ; la loi 05-20 et la DGSSI ne sont pas traitées (D08 pourtant récupéré)."],
+ "C06": ["correct", "Rôle de la MFA et vérification explicite Zero Trust ; moindre privilège non mentionné."],
+ "C07": ["partiel", "Actions correctes mais sévérité ambiguë (« critique ou élevée » alors que 7,5 = élevée)."],
+ "C08": ["partiel", "Lien chiffrement/obligation de sécurité correct mais attribué à D06 au lieu de D12 ; l'exemption d'information des personnes n'est pas énoncée."],
+ "C09": ["partiel", "Étapes de réaction correctes ; délais NIS2 absents ; citation D09 pour un contenu de D02 (le planificateur a écrit « NIST » au lieu de « NIS2 »)."],
+ "C10": ["incorrect", "Raisonnement faux (3 sauvegardes/jour) ; le « 21 » trouvé par la métrique automatique est un faux positif ; la calculatrice a rejeté l'expression « 24 »."]
+}
