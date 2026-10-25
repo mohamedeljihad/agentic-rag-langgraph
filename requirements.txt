@@ -1,0 +1,9 @@
+# Installer d'abord PyTorch CPU : pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.4
+transformers>=4.45
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+langgraph>=0.2
+langchain-core>=0.3
+numpy
+matplotlib
