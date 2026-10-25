@@ -1,0 +1,41 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	contextualiser(contextualiser)
+	analyser(analyser)
+	repondre_direct(repondre_direct)
+	glossaire(glossaire)
+	planifier(planifier)
+	rechercher(rechercher)
+	evaluer_documents(evaluer_documents)
+	reecrire(reecrire)
+	calculer(calculer)
+	generer(generer)
+	verifier(verifier)
+	finaliser(finaliser)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> contextualiser;
+	analyser -.-> glossaire;
+	analyser -. &nbsp;recherche&nbsp; .-> planifier;
+	analyser -. &nbsp;direct&nbsp; .-> repondre_direct;
+	calculer --> generer;
+	contextualiser --> analyser;
+	evaluer_documents -.-> calculer;
+	evaluer_documents -.-> generer;
+	evaluer_documents -.-> reecrire;
+	generer --> verifier;
+	glossaire -. &nbsp;trouve&nbsp; .-> finaliser;
+	glossaire -. &nbsp;non_trouve&nbsp; .-> planifier;
+	planifier --> rechercher;
+	rechercher --> evaluer_documents;
+	reecrire --> rechercher;
+	repondre_direct --> finaliser;
+	verifier --> finaliser;
+	finaliser --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
