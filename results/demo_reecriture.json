@@ -1,0 +1,119 @@
+[
+ {
+  "question": "OIV obligations",
+  "latence_s": 99.9,
+  "nb_reecritures": 1,
+  "docs_pertinents": [
+   "D09"
+  ],
+  "reponse": "Les obligations mentionnées dans la directive européenne NIS2 impliquent l'application de mesures de gestion des risques de cybersécurité par les entités importantes [D09]. Ces mesures comprennent l'analyse des risques, la gestion des incidents, la continuité d'activité, les sauvegardes, la sécurité de la chaîne d'approvisionnement, la cryptographie, le contrôle d'accès, l'authentification multifacteur et la formation [D09].",
+  "trace": [
+   {
+    "noeud": "contextualiser",
+    "duree_s": 0.0,
+    "info": "aucun historique pertinent"
+   },
+   {
+    "noeud": "analyser",
+    "duree_s": 35.62,
+    "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+   },
+   {
+    "noeud": "planifier",
+    "duree_s": 0.0,
+    "info": "question simple : pas de décomposition"
+   },
+   {
+    "noeud": "rechercher",
+    "duree_s": 4.31,
+    "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+   },
+   {
+    "noeud": "evaluer_documents",
+    "duree_s": 0.0,
+    "info": "0/4 pertinents (0 jugement(s) LLM)"
+   },
+   {
+    "noeud": "reecrire",
+    "duree_s": 12.82,
+    "info": "tentative 1 : [\"Quelles sont les obligations spécifiques des Organisations Internationales de l'Économie Financière (OIF) en matière de cybersecurité et de réglementation ?\"]"
+   },
+   {
+    "noeud": "rechercher",
+    "duree_s": 0.05,
+    "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+   },
+   {
+    "noeud": "evaluer_documents",
+    "duree_s": 7.46,
+    "info": "1/8 pertinents (3 jugement(s) LLM)"
+   },
+   {
+    "noeud": "generer",
+    "duree_s": 39.47,
+    "info": "1 fragment(s) en contexte, 428 caractères"
+   },
+   {
+    "noeud": "verifier",
+    "duree_s": 0.15,
+    "info": "ok; citations invalides retirées=[]; ancrage=0.919"
+   },
+   {
+    "noeud": "finaliser",
+    "duree_s": 0.0,
+    "info": "sources=['D09']"
+   }
+  ]
+ },
+ {
+  "question": "les hackers bloquent le site avec plein de requetes, on fait quoi ?",
+  "latence_s": 36.9,
+  "nb_reecritures": 0,
+  "docs_pertinents": [
+   "D01"
+  ],
+  "reponse": "Les hackers bloquent le site avec plein de requêtes pour tenter de compromettre l'application ou le serveur. Dans ce cas, il est recommandé de bloquer le site et de signaler immédiatement le problème à l'équipe de sécurité [D01].",
+  "trace": [
+   {
+    "noeud": "contextualiser",
+    "duree_s": 0.0,
+    "info": "aucun historique pertinent"
+   },
+   {
+    "noeud": "analyser",
+    "duree_s": 3.45,
+    "info": "LLM='DIRECT' -> recherche (garde-fou : score 0.847); complexe=False; calcul=False"
+   },
+   {
+    "noeud": "planifier",
+    "duree_s": 0.0,
+    "info": "question simple : pas de décomposition"
+   },
+   {
+    "noeud": "rechercher",
+    "duree_s": 0.04,
+    "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+   },
+   {
+    "noeud": "evaluer_documents",
+    "duree_s": 7.97,
+    "info": "1/4 pertinents (3 jugement(s) LLM)"
+   },
+   {
+    "noeud": "generer",
+    "duree_s": 25.33,
+    "info": "1 fragment(s) en contexte, 229 caractères"
+   },
+   {
+    "noeud": "verifier",
+    "duree_s": 0.14,
+    "info": "ok; citations invalides retirées=[]; ancrage=0.858"
+   },
+   {
+    "noeud": "finaliser",
+    "duree_s": 0.0,
+    "info": "sources=['D01']"
+   }
+  ]
+ }
+]
