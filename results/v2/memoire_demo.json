@@ -1,0 +1,124 @@
+{
+ "tours": [
+  {
+   "question": "Quel est le délai de notification d'une violation de données selon le RGPD ?",
+   "question_autonome": "Quel est le délai de notification d'une violation de données selon le RGPD ?",
+   "reponse": "Selon l'article 33 du RGPD, le responsable de traitement doit notifier la violation à l'autorité de contrôle compétente dans les meilleurs délais, si possible, au plus tard 72 heures après en avoir pris connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes [D06].",
+   "sources": [
+    "D06"
+   ],
+   "latence_s": 39.69,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 0.0,
+     "info": "aucun historique pertinent"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.96,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.04,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 0.0,
+     "info": "4/4 pertinents (0 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 35.3,
+     "info": "4 fragment(s) en contexte, 330 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.36,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.902"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  },
+  {
+   "question": "Et quelle amende maximale risque-t-on pour un manquement grave ?",
+   "question_autonome": "Quelle est l'amende maximale encourue pour un manquement grave selon le RGPD ?",
+   "reponse": "L'amende maximale encourue pour un manquement grave selon le RGPD est de 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial de l'exercice précédent [D06].",
+   "sources": [
+    "D06"
+   ],
+   "latence_s": 41.77,
+   "trace": [
+    {
+     "noeud": "contextualiser",
+     "duree_s": 8.28,
+     "info": "LLM -> Quelle est l'amende maximale encourue pour un manquement grave selon le RGPD ?"
+    },
+    {
+     "noeud": "analyser",
+     "duree_s": 3.83,
+     "info": "LLM='RECHERCHE' -> recherche; complexe=False; calcul=False"
+    },
+    {
+     "noeud": "planifier",
+     "duree_s": 0.0,
+     "info": "question simple : pas de décomposition"
+    },
+    {
+     "noeud": "rechercher",
+     "duree_s": 0.05,
+     "info": "1 requête(s), 4 nouveau(x) fragment(s)"
+    },
+    {
+     "noeud": "evaluer_documents",
+     "duree_s": 7.8,
+     "info": "1/4 pertinents (3 jugement(s) LLM)"
+    },
+    {
+     "noeud": "generer",
+     "duree_s": 21.61,
+     "info": "2 fragment(s) en contexte, 166 caractères"
+    },
+    {
+     "noeud": "verifier",
+     "duree_s": 0.18,
+     "info": "ok; citations invalides retirées=[]; ancrage=0.896"
+    },
+    {
+     "noeud": "finaliser",
+     "duree_s": 0.0,
+     "info": "sources=['D06']"
+    }
+   ]
+  }
+ ],
+ "historique_thread": [
+  {
+   "role": "human",
+   "contenu": "Quel est le délai de notification d'une violation de données selon le RGPD ?"
+  },
+  {
+   "role": "ai",
+   "contenu": "Selon l'article 33 du RGPD, le responsable de traitement doit notifier la violation à l'autorité de contrôle compétente dans les meilleurs délais, si possible, au plus tard 72 heures après en avoir pr"
+  },
+  {
+   "role": "human",
+   "contenu": "Et quelle amende maximale risque-t-on pour un manquement grave ?"
+  },
+  {
+   "role": "ai",
+   "contenu": "L'amende maximale encourue pour un manquement grave selon le RGPD est de 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial de l'exercice précédent [D06]."
+  }
+ ]
+}
